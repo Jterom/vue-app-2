@@ -1,15 +1,15 @@
 <template>
   <div id='app'>
-    <Search/>
+    <show/>
   </div>
 </template>
 
 <script>
-  import Search from '../components/Search'
+  import show from '../components/Show'
   export default {
     name: 'App',
     components: {
-      Search
+      show
     }
   }
 </script>

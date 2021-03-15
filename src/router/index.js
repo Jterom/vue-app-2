@@ -1,15 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Filmes from '../views/Filmes.vue'
+import Films from '../views/Films.vue'
+import Detail from '../views/Detail.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Filmes',
-    component: Filmes
-  }
+    name: 'Films',
+    component: Films
+  },
+    {
+        path: '/Detail/:id',
+        name: 'Detail',
+        component: Detail
+    }
 ]
 
 const router = new VueRouter({
